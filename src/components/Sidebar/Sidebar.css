@@ -1,0 +1,21 @@
+.sidebar{
+    width: 280px;
+    --bs-link-color:#abb9e8;
+    --bs-link-hover-color:#fff;
+    --bs-secondary:#838fb9;
+    --bs-secondary-rgb:131, 143, 185;
+    transition: all 0.3s;                      
+    overflow: hidden;                                  
+}
+.navlink:hover{
+    color:var(--bs-link-hover-color);
+}
+
+.navlink::after{
+    position: absolute;
+}
+.hide{
+    width: 0;
+    padding: 0 !important;
+    
+}
