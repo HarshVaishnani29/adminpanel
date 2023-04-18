@@ -3,6 +3,7 @@ import logo from '../../images/logo.png'
 import { Box, ChevronRight, Gear, People, Person, PersonLock, Speedometer } from 'react-bootstrap-icons';
 import './Sidebar.css'
 import { Accordion, useAccordionButton } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -35,7 +36,7 @@ function Sidebar({show}) {
                 <Accordion defaultActiveKey="0">
                     <ul className='list-unstyled'>
                         <li className='p-2'>
-                            <a href="#" className=' d-flex text-decoration-none'>
+                            <NavLink to="/" className=' d-flex text-decoration-none'>
                                 <div className='icon col-1'>
                                     <Speedometer />
                                 </div>
@@ -47,11 +48,11 @@ function Sidebar({show}) {
                                 <div className='arrow'>
                                     <ChevronRight />
                                 </div>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='p-2'>
                             <CustomToggle eventKey="0">
-                                <a href="#" className=' d-flex text-white text-decoration-none navlink'>
+                                <NavLink href="#" className=' d-flex text-white text-decoration-none navlink'>
                                     <div className='icon col-1'>
                                         <People />
                                     </div>
@@ -63,12 +64,12 @@ function Sidebar({show}) {
                                     <div className='arrow'>
                                         <ChevronRight />
                                     </div>
-                                </a>
+                                </NavLink>
                             </CustomToggle>
                             <Accordion.Collapse eventKey="0">
                                 <ul className='dropdownMenu list-unstyled p-3'>
                                     <li className='p-2'>
-                                        <a href="#" className=' d-flex  text-decoration-none navlink'>
+                                        <NavLink to="/user" className=' d-flex  text-decoration-none navlink'>
                                             <div className='icon col-1'>
                                                 <Person />
                                             </div>
@@ -77,10 +78,10 @@ function Sidebar({show}) {
                                                     User
                                                 </span>
                                             </div>
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className='p-2'>
-                                        <a href="#" className=' d-flex  text-decoration-none navlink'>
+                                        <NavLink to="/admin" className=' d-flex  text-decoration-none navlink'>
                                             <div className='icon col-1'>
                                                 <PersonLock />
                                             </div>
@@ -89,7 +90,7 @@ function Sidebar({show}) {
                                                     Admin
                                                 </span>
                                             </div>
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </Accordion.Collapse>
