@@ -1,21 +1,21 @@
 .sidebar{
-    width: 280px;
-    --bs-link-color:#abb9e8;
-    --bs-link-hover-color:#fff;
-    --bs-secondary:#838fb9;
-    --bs-secondary-rgb:131, 143, 185;
-    transition: all 0.3s;                      
-    overflow: hidden;                                  
+    width: 300px;
+    --bs-link-hover-color : #FFF;
+    --bs-link-color : #838fb9 ;
+    overflow: hidden;
+    transition: all 0.2s;
+
 }
-.navlink:hover{
-    color:var(--bs-link-hover-color);
+
+.nav-link:hover{
+    color: var(--bs-link-hover-color);
 }
 
 .navlink::after{
     position: absolute;
 }
-.hide{
+
+.hide {
     width: 0;
     padding: 0 !important;
-    
 }

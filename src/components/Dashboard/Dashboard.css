@@ -1,0 +1,53 @@
+:root{
+    --icon-size: 35px;
+    --line-height:30px;
+}
+.icons{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-color: rgba(10, 179, 156, 0.18);
+    line-height: var(--line-height);
+    color: rgb(10, 179, 156);
+}
+.icons-1{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-color: rgba(240,101, 72,0.18);
+    line-height: var(--line-height);
+    color: rgb(240,101, 72);
+}
+.ic{
+    margin-left: 9.5px;
+}
+.ico img{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-left:8px;
+}
+.rmdp-container input{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 150px;
+}
+
+.rmdp-range{
+    background-color: #f3f6f9;
+    box-shadow: 0 0 3px transparent;
+    color: #000;
+}
+
+.rmdp-day.rmdp-today span{
+    background-color: #405189;
+}
+
+.rmdp-range.start,.rmdp-range.end{
+    background-color: #405189;
+    color: #fff;
+}
+
+.rmdp-input:focus{
+    border: 1px solid transparent;
+    box-shadow: 0 0 2px transparent;
+    outline: none !important;
+}
